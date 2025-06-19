@@ -2,19 +2,92 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 body {
     height: 100vh;
+    background-color: #F8FAFC;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: 000000;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: 000000;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4D5562;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .author-info {
     font-size: 14px;
-    text-align: center;
     margin-top: 16px;
     color: rgb(55, 65, 81);
 }
 
 .author-info a {
+    color: #4E80EE;
     text-decoration: none;
+}
+
+.heading {
+    max-width: 69vw;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto 20px auto;
+}
+
+.article img {
+    border-radius: 12px;
+    height: auto;
+    width: auto;
+    max-height: none;   
+}
+
+.info {
+    padding: 30px 0 30px 50px;
+}
+
+.info p {
+    margin-top: 15px;
+}
+
+@media (max-width: 1024px) {
+    .heading {
+        max-width: 82vw;
+    }
+}
+
+@media (max-width: 673px) {
+    .heading {
+        max-width: 100%;
+    }
 }
